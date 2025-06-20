@@ -1,114 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechNova IT Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShineBright Cleaning - Peterborough</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f7fa;
-      color: #333;
+      background: #f5f5f5;
     }
     header {
-      background-color: #1e2a38;
-      padding: 20px;
-      text-align: center;
+      background: #005a87;
       color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #003f63;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
     .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
+      background: url('https://images.unsplash.com/photo-1598514982984-7841ee676fa1') no-repeat center center/cover;
       color: white;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      text-align: center;
+      padding: 100px 20px;
     }
     .section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
-    .services {
+    .cards {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      justify-content: space-around;
+      justify-content: center;
     }
-    .service-box {
-      background-color: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       padding: 20px;
       flex: 1 1 250px;
-      border-radius: 8px;
-      text-align: center;
     }
     footer {
-      background-color: #1e2a38;
+      background: #003f63;
       color: white;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>TechNova IT Solutions</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>ShineBright Cleaning Services</h1>
+  <p>Professional & Reliable Cleaning in Peterborough</p>
+</header>
 
-  <div class="hero">
-    <h1>Your Tech, Our Passion</h1>
-    <p>Delivering cutting-edge IT services for a smarter tomorrow.</p>
-  </div>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#prices">Prices</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-box">
-        <h3>Network Solutions</h3>
-        <p>Enterprise-grade network design, setup, and security.</p>
-      </div>
-      <div class="service-box">
-        <h3>Cloud Services</h3>
-        <p>Scalable cloud infrastructure powered by AWS & Azure.</p>
-      </div>
-      <div class="service-box">
-        <h3>Cybersecurity</h3>
-        <p>Firewall, endpoint protection, and vulnerability management.</p>
-      </div>
+<div id="home" class="hero">
+  <h2>Your Clean Home is Just a Call Away</h2>
+  <p>Serving homes and offices across Peterborough with care.</p>
+</div>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Home Cleaning</h3>
+      <p>Deep cleaning, dusting, floors, bathrooms and kitchens.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Office Cleaning</h3>
+      <p>Regular office cleaning after hours or on weekends.</p>
+    </div>
+    <div class="card">
+      <h3>Move-in/Move-out</h3>
+      <p>Spotless service before or after your move.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>TechNova is a team of tech enthusiasts offering high-quality IT consulting and managed services. With over 10 years of experience, we help businesses grow by streamlining their IT operations.</p>
-  </section>
+<section id="prices" class="section">
+  <h2>Our Prices</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Studio/1 Bedroom</h3>
+      <p>Starting at $75 per clean</p>
+    </div>
+    <div class="card">
+      <h3>2-3 Bedroom</h3>
+      <p>Starting at $110 per clean</p>
+    </div>
+    <div class="card">
+      <h3>Office</h3>
+      <p>Custom quote based on size & frequency</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: contact@technova.com | Phone: +1-800-555-TECH</p>
-  </section>
+<section id="about" class="section">
+  <h2>About ShineBright</h2>
+  <p>Locally owned cleaning business based in Peterborough. We believe in using eco-friendly products, delivering reliable service, and making your life easier. All our staff are background-checked and fully insured.</p>
+</section>
 
-  <footer>
-    &copy; 2025 TechNova IT Solutions. All rights reserved.
-  </footer>
+<section id="reviews" class="section">
+  <h2>Customer Reviews</h2>
+  <div class="cards">
+    <div class="card">
+      <p>"My apartment has never been cleaner! Super friendly staff too." – Sarah L.</p>
+    </div>
+    <div class="card">
+      <p>"Professional and efficient. Highly recommended for offices!" – Ben R.</p>
+    </div>
+    <div class="card">
+      <p>"Always on time and very thorough. Thank you ShineBright!" – Alicia K.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Email: hello@shinebrightcleaning.ca</p>
+  <p>Phone: +1 705-555-1234</p>
+  <p>Service Area: Peterborough, ON</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 ShineBright Cleaning Services. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
